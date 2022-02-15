@@ -240,11 +240,12 @@ html,body {
 }
 
 .main {
-  flex: 1 0 60%;
+  flex: 0 2 70%;
 }
 
 .main-item {
   display: flex;
+  align-items: flex-start;
   gap: 30px;  
 }
 
@@ -253,11 +254,11 @@ html,body {
 }
 
 .main-image {
-  width: 381px;
+  width: 50%;
 }
 
 .main-post {
-  width: 381px;
+  flex: 0 1 50%
 }
 
 .main-tags-list {
@@ -320,7 +321,7 @@ html,body {
 
 /* aside */
 .aside {
-  flex: 0 0 22.5%;
+  flex: 0  22.5%;
   margin-top: -6px;
 }
 
@@ -597,6 +598,18 @@ html,body {
     top: -100%;
   }
 
+  .main-item {
+    flex-direction: column;
+    flex: 0 1 100%;
+  }
+
+  .main-image {
+    width: 100%;
+  }
+  
+  .main-post {
+    flex: 0 1 100%
+  }
 
 }
 
@@ -671,7 +684,16 @@ html,body {
   }
 
   .trends-list {
-    display: block;
+    flex-direction: column;
   }
 
+  .trend {
+    width: 100%;
+  }
+
+  .main-container {
+    flex-direction: column;
+  }
+
+  
 }
