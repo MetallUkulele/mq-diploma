@@ -704,6 +704,33 @@ html,body {
 
 }
 
+@media only screen and (max-width: 560px) {
+
+  .main-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .aside {
+    width: 100%;
+    margin: 44px auto;
+  }
+
+  .sidebar-input {
+    width: 100%;
+  }
+
+  .subscription-btn {
+    width: 100%;
+  }
+
+  .aside-heading {
+    font-size: 16px;
+  }
+
+}
+
+
 @media only screen and (max-width: 420px) {
 
   .trends-list {
@@ -749,9 +776,7 @@ html,body {
     line-height: 1.375;
   }
 
-  .main-container {
-    flex-direction: column;
-  }
+  
 
   
 
