@@ -63,7 +63,7 @@
       </header>
 
       <section class="trends">
-        <h2 class="heading trends-heading">сейчас в тренде</h2>
+        <h2 class="heading section-heading">сейчас в тренде</h2>
         <ul class="list trends-list">
           <li class="trend trend-garden">
             <div class="trend-container">
@@ -80,9 +80,9 @@
                 </li>
               </ul>
               <a href="#" class="trend-link">
-                <strong class="heading trend-heading">
+                <h3 class="heading trend-heading">
                   Сейчас в тренде: сад на подоконнике
-                </strong>
+                </h3>
               </a>
             </div>
           </li>
@@ -101,9 +101,9 @@
                 </li> -->
               </ul>
               <a href="#" class="trend-link">
-                <strong class="heading trend-heading">
+                <h3 class="heading trend-heading">
                   сыры на красивых картинках из интернета: какие они на вкус?
-                </strong>
+                </h3>
               </a>
             </div>
           </li>
@@ -122,9 +122,9 @@
                 </li>
               </ul>
               <a href="#" class="trend-link">
-                <strong class="heading trend-heading">
+                <h3 class="heading trend-heading">
                   собираемся в первый поход в горы
-                </strong>
+                </h3>
               </a>
             </div>
           </li>
@@ -143,9 +143,9 @@
                 </li>
               </ul>
               <a href="#" class="trend-link">
-                <strong class="heading trend-heading">
+                <h3 class="heading trend-heading">
                   Сейчас в тренде: сколько витамина в лимонах?
-                </strong>
+                </h3>
               </a>
             </div>
           </li>
@@ -558,20 +558,80 @@
       </div>
 
       <section class="products">
-        <h2 class="heading">Наши изделия</h2>
-        <ul class="products-list">
-          <li class="product">
-            <picture>
-              <source media="(min-width: 768px)" srcset="../img/shop-item-desk1.jpg">
-              <source media="(max-width: 767px)" srcset="../img/shop-item-tablet1.jpg">
-              <source media="(max-width: 360px)" srcset="../img/shop-item-mobile1.jpg">
-              <img src="../img/shop-item-desk1.jpg" alt="подушка">
-            </picture>
-          </li>
-        </ul>
+        <div class="container">
+          <h2 class="heading section-heading">Наши изделия</h2>
+          <ul class="list products-list">
+            <li class="product">
+              <picture class="product-imgs">
+                <source srcset="img/shop-item-tablet1.jpg" media="(min-width: 361px) and (max-width: 767px)">
+                <source srcset="img/shop-item-mobile1.jpg" media="(max-width: 360px)">
+                <img src="img/shop-item-desk1.jpg" alt="подушка" class="product-img">
+              </picture>
+              <div class="product-container">
+                <h3 class="heading card-heading">
+                  подушки на диван
+                </h3>
+                <p class="product-description">
+                  Набор из двух подушек с модными принтами. Видео о создании <a class="product-description-link">здесь</a>.
+                </p>
+                <div class="price-container">
+                  <div class="prices">
+                    <span class="price-before">1000 &#8381</span>
+                    <span class="price">800 &#8381</span>
+                  </div>
+                  <button class="btn product-btn">в магазин</button>
+                </div>
+              </div>
+            </li>
+            <li class="product">
+              <picture class="product-imgs">
+                <source srcset="img/shop-item-tablet1.jpg" media="(min-width: 361px) and (max-width: 767px)">
+                <source srcset="img/shop-item-mobile1.jpg" media="(max-width: 360px)">
+                <img src="img/shop-item-desk1.jpg" alt="подушка" class="product-img">
+              </picture>
+              <div class="product-container">
+                <h3 class="heading card-heading">
+                  подушки на диван
+                </h3>
+                <p class="product-description">
+                  Интерьерная рукодельная кукла «Зайчик», созданию которой посвящена <a class="product-description-link">весенняя серия постов</a> в блоге и несколько подкастов.
+                </p>
+                <div class="price-container">
+                  <div class="prices">
+                    <span class="price-before">1000 &#8381</span>
+                    <span class="price">800 &#8381</span>
+                  </div>
+                  <button class="btn product-btn">в магазин</button>
+                </div>
+              </div>
+            </li>
+            <li class="product">
+              <picture class="product-imgs">
+                <source srcset="img/shop-item-tablet1.jpg" media="(min-width: 361px) and (max-width: 767px)">
+                <source srcset="img/shop-item-mobile1.jpg" media="(max-width: 360px)">
+                <img src="img/shop-item-desk1.jpg" alt="подушка" class="product-img">
+              </picture>
+              <div class="product-container">
+                <h3 class="heading card-heading">
+                  подушки на диван
+                </h3>
+                <p class="product-description">
+                  Набор из двух подушек с модными принтами. Видео о создании <a class="product-description-link">здесь</a>.
+                </p>
+                <div class="price-container">
+                  <div class="prices">
+                    <span class="price-before">1000 &#8381</span>
+                    <span class="price">800 &#8381</span>
+                  </div>
+                  <button class="btn product-btn">в магазин</button>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
       </section>
       
-      <!-- <footer class="footer">
+      <footer class="footer">
         <div class="container footer-container">
           <ul class="list social-list">
             <li class="social-item">
@@ -606,6 +666,6 @@
             </a>
           </div>
         </div>
-      </footer> -->
+      </footer>
   </body>
 </html>
