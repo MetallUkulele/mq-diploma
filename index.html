@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <header class="header">
+    <!-- <header class="header">
         <div class="container header-container">
           <div class="nav">
             <div class="logo">
@@ -60,7 +60,7 @@
             Блог о творчестве, спорте, и образе жизни
           </h1>
         </div>
-      </header>
+      </header> -->
 
       <section class="trends">
         <h2 class="heading section-heading">сейчас в тренде</h2>
@@ -562,11 +562,13 @@
           <h2 class="heading section-heading">Наши изделия</h2>
           <ul class="list products-list">
             <li class="product">
-              <picture class="product-imgs">
-                <source srcset="img/shop-item-tablet1.jpg" media="(min-width: 361px) and (max-width: 767px)">
-                <source srcset="img/shop-item-mobile1.jpg" media="(max-width: 360px)">
-                <img src="img/shop-item-desk1.jpg" alt="подушка" class="product-img">
-              </picture>
+              <div class="product-imgs">
+                <picture> 
+                  <source srcset="img/shop-item-tablet1.jpg" media="(min-width: 361px) and (max-width: 767px)">
+                  <source srcset="img/shop-item-mobile1.jpg" media="(max-width: 360px)" class="mobile-img">
+                  <img src="img/shop-item-desk1.jpg" alt="подушка" class="product-img">
+                </picture>
+              </div>
               <div class="product-container">
                 <h3 class="heading card-heading">
                   подушки на диван
@@ -582,51 +584,7 @@
                   <button class="btn product-btn">в магазин</button>
                 </div>
               </div>
-            </li>
-            <li class="product">
-              <picture class="product-imgs">
-                <source srcset="img/shop-item-tablet1.jpg" media="(min-width: 361px) and (max-width: 767px)">
-                <source srcset="img/shop-item-mobile1.jpg" media="(max-width: 360px)">
-                <img src="img/shop-item-desk1.jpg" alt="подушка" class="product-img">
-              </picture>
-              <div class="product-container">
-                <h3 class="heading card-heading">
-                  подушки на диван
-                </h3>
-                <p class="product-description">
-                  Интерьерная рукодельная кукла «Зайчик», созданию которой посвящена <a class="product-description-link">весенняя серия постов</a> в блоге и несколько подкастов.
-                </p>
-                <div class="price-container">
-                  <div class="prices">
-                    <span class="price-before">1000 &#8381</span>
-                    <span class="price">800 &#8381</span>
-                  </div>
-                  <button class="btn product-btn">в магазин</button>
-                </div>
-              </div>
-            </li>
-            <li class="product">
-              <picture class="product-imgs">
-                <source srcset="img/shop-item-tablet1.jpg" media="(min-width: 361px) and (max-width: 767px)">
-                <source srcset="img/shop-item-mobile1.jpg" media="(max-width: 360px)">
-                <img src="img/shop-item-desk1.jpg" alt="подушка" class="product-img">
-              </picture>
-              <div class="product-container">
-                <h3 class="heading card-heading">
-                  подушки на диван
-                </h3>
-                <p class="product-description">
-                  Набор из двух подушек с модными принтами. Видео о создании <a class="product-description-link">здесь</a>.
-                </p>
-                <div class="price-container">
-                  <div class="prices">
-                    <span class="price-before">1000 &#8381</span>
-                    <span class="price">800 &#8381</span>
-                  </div>
-                  <button class="btn product-btn">в магазин</button>
-                </div>
-              </div>
-            </li>
+            </li>            
           </ul>
         </div>
       </section>
