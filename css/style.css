@@ -351,11 +351,8 @@ html, body {
 .trend-tags-list {
   display: flex;
   flex-wrap: wrap;
+  gap: 18px;
   margin-bottom: 11px;
-}
-
-.trend-tag:not(:last-child) {
-  margin-right: 18px;
 }
 
 .tag-link {
@@ -381,15 +378,18 @@ html, body {
   gap: 120px;
 }
 
+.main-list {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
 .main-item {
   display: flex;
   align-items: flex-start;
   gap: 30px;  
 }
 
-.main-item:not(:first-child) {
-  margin-top: 60px;
-}
 
 .main-image {
   width: 50%;
@@ -446,19 +446,16 @@ html, body {
 }
 
 .post-description {
-  margin-top: 46px;  
+  margin-top: 46px;
+  display: flex;
+  flex-direction: column; 
+  gap: 10px; 
 }
 
 .post-text {
   font-size: 15px;
   line-height: 1.46;
 }
-
-.post-text:not(:first-child) {
-  margin-top: 10px;
-}
-
-
 
 
 /* aside */
@@ -864,7 +861,6 @@ html, body {
   .product {
     min-width: 200px;
     width: calc(50% - 30px);
-    gap: 30px;
   }
 
 }
@@ -975,8 +971,8 @@ html, body {
     border-bottom: 1px solid #eeeeee;
   }
 
-  .main-item:not(:first-child) {
-    margin-top: 40px;
+  .main-list {
+    gap: 40px;
   }
 
   .main-image {
